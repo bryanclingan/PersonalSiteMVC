@@ -1,0 +1,28 @@
+﻿
+#one div.content{
+    background-color: rgb(1, 116, 120);
+}
+#two div.content {
+    background-color: rgb(120, 33, 1);
+}
+#three div.content {
+    background-color: rgb(62, 1, 120);
+    
+}
+#four div.content {
+    background-color: rgb(120, 92, 1);
+}
+.custom-btn-1 {
+    background-color: rgb(1, 116, 120);
+}
+
+.custom-btn-2 {
+    background-color: rgb(120, 33, 1);
+}
+
+.custom-btn-1:hover {
+    background-color: rgb(30, 141, 145);
+}
+.custom-btn-2:hover {
+    background-color: rgb(145, 61, 30);
+}
