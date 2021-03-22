@@ -45,7 +45,7 @@ namespace PersonalSite.UI.MVC.Controllers
             
             string message = $"You have received an email from {cvm.Name} with a subject of {cvm.Subject}. Please respond to {cvm.Email} with your response to the following message: <br/>{cvm.Message}";
                         
-            MailMessage mm = new MailMessage("", "", cvm.Subject, message);
+            MailMessage mm = new MailMessage("webadmin@bryandoescode.com", "bryanclingan@outlook.com", cvm.Subject, message);
                         
             mm.IsBodyHtml = true;
             
@@ -53,9 +53,9 @@ namespace PersonalSite.UI.MVC.Controllers
             
             mm.ReplyToList.Add(cvm.Email);
                         
-            SmtpClient client = new SmtpClient("");
+            SmtpClient client = new SmtpClient("mail.bryandoescode.com");
                         
-            client.Credentials = new NetworkCredential("", "");
+            client.Credentials = new NetworkCredential("webadmin@bryandoescode.com", "P@ssw0rd");
 
             client.Port = 587;
             //client.UseDefaultCredentials = false;
